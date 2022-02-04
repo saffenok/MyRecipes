@@ -13,16 +13,24 @@
 </head>
 <body>
     <div class="header">
-        <a href="/index.html">
-            <img src="images/food_icon.svg" alt="иконка еды" id="logo-to-main-page">
-        </a>
-        <a href="/index.html" id="to-main-page">На главную</a>
+        <div class="to-main-page">
+            <a href="/index.html">
+                <img src="images/food_icon.svg" alt="иконка еды" id="logo-to-main-page">
+            </a>
+            <a href="/index.html" id="text-to-main-page">На главную</a>
+        </div>
         
-        <!-- <form class="search">
-            <input type="search">
-            <input type="submit" value="Поиск">
-        </form> -->
-        <img src="images/search_icon.svg" alt="иконка поиска" id="logo-search">
+        <div class="search">
+            <button onclick="search()" class="search-button"><img src="images/search_icon.svg" alt="иконка поиска" id="logo-search"></button>
+            <div class="search-content" id="search">
+              <input type="text" placeholder="Найти рецепт" id="search-input-text" onkeyup="filterFunction()">
+              <a href="#brownie">Брауни</a>
+              <a href="#cheesecake">Чизкейк</a>
+              <a href="#tiramisu">Тирамису</a>
+              <a href="#carbonara">Спагетти карбонара</a>
+              <a href="#bun">Вензель с малиной</a>
+            </div>
+        </div>
     </div>
     
     <div class="container-welcome">
@@ -38,27 +46,23 @@
     <button class="button-more"><a href="/about_project.html">Подробнее</a></button>
 
     <h1>Рецепты</h1>
-
-    <div class="dish-card-1">
+    <div class="dish-card-1" id="brownie">
         <img src="/images/брауни.png" alt="фото блюда" class="dish-foto">
         <div class="about-dish">
-            <pre class="dish-title">Название блюда 1</pre>
+            <pre class="dish-title">Брауни</pre>
             <pre class="dish-ingredients">Ингредиенты 1:</pre>
             <table class="dish-ingredient">
                 <tr><td>Ингредиент 1</td><td> - </td><td>кол-во 1</td></tr>
                 <tr><td>Ингредиент 2</td><td> - </td><td>кол-во 2</td></tr>
                 <tr><td>Ингредиент 3</td><td> - </td><td>кол-во 3</td></tr>
             </table>
-
-            
-
             <button class="button-more" id="button-dish"><a href="">Подробнее</a></button>
         </div>
     </div>
 
-    <div class="dish-card-2">
+    <div class="dish-card-2" id="cheesecake">
         <div class="about-dish">
-            <pre class="dish-title">Название блюда 2</pre>
+            <pre class="dish-title">Чизкейк</pre>
             <pre class="dish-ingredients">Ингредиенты 2:</pre>
             <table class="dish-ingredient">
                 <tr><td>Ингредиент 1</td><td> - </td><td>кол-во 1</td></tr>
@@ -69,5 +73,49 @@
         </div>
         <img src="/images/брауни.png" alt="фото блюда" class="dish-foto">
     </div>
+
+    <div class="dish-card-1" id="tiramisu">
+        <img src="/images/брауни.png" alt="фото блюда" class="dish-foto">
+        <div class="about-dish">
+            <pre class="dish-title">Тирамису</pre>
+            <pre class="dish-ingredients">Ингредиенты 1:</pre>
+            <table class="dish-ingredient">
+                <tr><td>Ингредиент 1</td><td> - </td><td>кол-во 1</td></tr>
+                <tr><td>Ингредиент 2</td><td> - </td><td>кол-во 2</td></tr>
+                <tr><td>Ингредиент 3</td><td> - </td><td>кол-во 3</td></tr>
+            </table>
+            <button class="button-more" id="button-dish"><a href="">Подробнее</a></button>
+        </div>
+    </div>
+
+    <div class="dish-card-2" id="carbonara">
+        <div class="about-dish">
+            <pre class="dish-title">Спагетти карбонара</pre>
+            <pre class="dish-ingredients">Ингредиенты 2:</pre>
+            <table class="dish-ingredient">
+                <tr><td>Ингредиент 1</td><td> - </td><td>кол-во 1</td></tr>
+                <tr><td>Ингредиент 2</td><td> - </td><td>кол-во 2</td></tr>
+                <tr><td>Ингредиент 3</td><td> - </td><td>кол-во 3</td></tr>
+            </table>
+            <button class="button-more" id="button-dish"><a href="">Подробнее</a></button>
+        </div>
+        <img src="/images/брауни.png" alt="фото блюда" class="dish-foto">
+    </div>
+
+    <div class="dish-card-1" id="bun">
+        <img src="/images/брауни.png" alt="фото блюда" class="dish-foto">
+        <div class="about-dish">
+            <pre class="dish-title">Вензель с малиной</pre>
+            <pre class="dish-ingredients">Ингредиенты 1:</pre>
+            <table class="dish-ingredient">
+                <tr><td>Ингредиент 1</td><td> - </td><td>кол-во 1</td></tr>
+                <tr><td>Ингредиент 2</td><td> - </td><td>кол-во 2</td></tr>
+                <tr><td>Ингредиент 3</td><td> - </td><td>кол-во 3</td></tr>
+            </table>
+            <button class="button-more" id="button-dish"><a href="">Подробнее</a></button>
+        </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

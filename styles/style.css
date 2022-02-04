@@ -4,6 +4,7 @@
     --color-text-on-primary: #ffefcf;
     --color-of-background: #f8f0ea;
     --color-primary-light: #bb6c2f;
+    --color-secondary-dark: #c54b00;
 }
 
 *{
@@ -24,36 +25,93 @@ html{
     top: 0;
     left: 0;
     width: 100%;
-    height: 35px;
+    height: 44px;
     background: var(--color-primary-light);
     opacity: .9;
     z-index: 5;
 }
 
-#logo-to-main-page{
-    margin-top: 5px;
-    margin-left: 3px;
+.to-main-page{
+    display: flex;
+    position: fixed;
+    top: 7px;
+    left: 7px;
+    cursor: pointer;
 }
 
-#to-main-page{
-    position: fixed;
-    background: var(--color-secondary);
+#logo-to-main-page:hover, #logo-to-main-page:focus{
+    background-color: var(--color-secondary);
+}
+
+#text-to-main-page{
+    /* background: var(--color-secondary); */
+    color: var(--color-text-on-primary);
     height: 25px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 25px;
-    margin-top: 3px;
-    margin-left: 5px;
+    margin-left: 10px;
     padding: 2px;
+    cursor: pointer;
     /* opacity: 1; */
 }
 
+#text-to-main-page:hover, #text-to-main-page:focus{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+
 .search{
-    float: right;
-    margin-right: 3px;
-    margin-top: 5px;
+    position: fixed;
+    top: 6px;
+    right: 7px;
+}
+
+.search-button{
+    background-color: var(--color-primary-light);
+    padding: 1px;
+    border: none;
+    cursor: pointer;
+  }
+
+.search-button:hover, .search-button:focus{
+    background-color: var(--color-secondary);
+}
+
+#search-input-text{
+    /* box-sizing: border-box; */
+    font-size: 14px;
+    width: auto;
+    padding: 5% 25%;
+    border: 3px solid var(--color-secondary);
+}
+
+#search-input-text:focus{
+    outline: 3px solid var(--color-secondary-dark);
+}
+
+.search-content{
+    display: none;
+    background-color: var(--color-of-background);
+    width: auto;
+}
+
+.search-content a{
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.search-content a:hover{
+    background-color: var(--color-secondary-dark);
+    color: var(--color-text-on-primary);
+}
+
+.show{
+    display:block;
 }
 
 #logo-search{
@@ -173,7 +231,10 @@ h1{
 
 .about-dish{
     margin: auto;
-    padding: 0;
+    padding: 5%;
+    width: 38%;
+
+    /* border: 5px solid red; */
 }
 
 .dish-title{
@@ -189,6 +250,11 @@ h1{
 
 .dish-ingredient{
     margin-top: 20px;
+}
+
+td{
+    width: 30%;
+    text-align: center;
 }
 
 #button-dish{
