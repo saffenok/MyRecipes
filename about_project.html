@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,15 +14,17 @@
 <body>
     <div class="about-project">
         <div class="header">
-            <div class="to-main-page">
+            <div class="container-menu">
                 <a href="/index.html">
-                    <img src="images/food_icon.svg" alt="иконка еды" id="logo-to-main-page">
+                    <img src="images/food_icon.svg" id="logo-to-main-page" title="На главную">
                 </a>
-                <a href="/index.html" id="text-to-main-page">На главную</a>
+                <a href="/index.html" class="menu">Let's cook!</a>
+                <a href="#about-project" class="menu">О проекте</a>
+                <a href="#contacts" class="menu">Контакты</a>
             </div>
         </div>
 
-        <div class="header-about-project">
+        <div class="header-about-project" id="about-project">
             <h1>О проекте</h1>
         </div>
         <div class="about-author">
@@ -32,6 +34,18 @@
 
         <div class="project-text">
             <p>Данный проект является учебным. Дизайн и разработка - студентка 4 курса, Гусейнова Сафия. Для разработки интерфейсов и прототипирования использовался онлайн-сервис Figma, для верстки и описания внешнего вида веб-страниц - HTML, CSS.</p>
+        </div>
+
+        <div id="contacts">
+            <h1>Контакты</h1>
+            <div class="footer">
+                <a href="https://vk.com/saffenok">
+                    <img src="/images/vk-icon.png" class="contact-link" title="вк">
+                </a>
+                <a href="https://t.me/saffenok">
+                    <img src="/images/telegram-icon.png" class="contact-link" title="телеграм">
+                </a>
+            </div>
         </div>
 
     </div>

@@ -21,6 +21,8 @@ html{
 }
 
 .header{
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,10 +33,10 @@ html{
     z-index: 5;
 }
 
-.to-main-page{
+.container-menu{
     display: flex;
     position: fixed;
-    top: 7px;
+    /* top: 4px; */
     left: 7px;
     cursor: pointer;
 }
@@ -43,7 +45,11 @@ html{
     background-color: var(--color-secondary);
 }
 
-#text-to-main-page{
+#logo-to-main-page{
+    padding: 4px;
+}
+
+.menu{
     /* background: var(--color-secondary); */
     color: var(--color-text-on-primary);
     height: 25px;
@@ -53,26 +59,26 @@ html{
     text-decoration: none;
     line-height: 25px;
     margin-left: 10px;
-    padding: 2px;
+    padding: 5px;
     cursor: pointer;
     /* opacity: 1; */
+    border-radius: 15px;
 }
 
-#text-to-main-page:hover, #text-to-main-page:focus{
+.menu:hover, .menu:focus{
     background-color: var(--color-secondary);
     color: var(--color-primary);
 }
 
-
 .search{
     position: fixed;
-    top: 6px;
+    /* top: 6px; */
     right: 7px;
 }
 
 .search-button{
     background-color: var(--color-primary-light);
-    padding: 1px;
+    padding: 2px;
     border: none;
     cursor: pointer;
   }
@@ -204,11 +210,11 @@ h1{
     text-transform: uppercase;
     letter-spacing: 0.04em;
     text-align: center;
-    margin-top: 30px;
     padding: 15px;
     background: var(--color-secondary);
     border: 0;
-    border-radius: 10px;
+    border-radius: 15px;
+    margin-top: 30px;
 
     position: relative;
     left: 50%;
@@ -253,14 +259,14 @@ h1{
 }
 
 td{
-    width: 30%;
+    width: 25%;
     text-align: center;
 }
 
 #button-dish{
     margin-top: 20px;
     position: relative;
-    transform: translate(-75%, 0);
+    transform: translate(-150%, 0);
 }
 
 
@@ -270,7 +276,17 @@ td{
     width: 100%;
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.contact-link{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
 
 
 
